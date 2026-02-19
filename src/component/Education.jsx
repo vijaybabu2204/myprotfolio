@@ -1,18 +1,26 @@
 import React from "react";
-import { education } from "../data/portfolioData";
+import "../index.css";
 
-const Education = () => (
-  <section className="section">
-    <h2>Education</h2>
-    {education.map((edu) => (
-      <div key={edu.degree} className="edu-card">
-        <h3>{edu.degree}</h3>
-        <p>{edu.institution}</p>
-        <p>{edu.duration}</p>
-        <p>{edu.details}</p>
+const Education = () => {
+  return (
+    <section className="section">
+      <h2>Education</h2>
+
+      <div className="education-card">
+        <h3>B.Tech in Artificial Intelligence and Machine Learning</h3>
+        <p>Aditya College Of Engineering and Technology, Surampalem</p>
+        <p>2023 - 2027</p>
+        <p>CGPA: 7.8 / 10.0</p>
       </div>
-    ))}
-  </section>
-);
+
+      <div className="education-card">
+        <h3>Intermediate (MPC)</h3>
+        <p>MNR Junior College</p>
+        <p>2021 - 2023</p>
+        <p>Percentage: 85%</p>
+      </div>
+    </section>
+  );
+};
 
 export default Education;

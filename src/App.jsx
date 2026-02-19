@@ -7,6 +7,7 @@ import Education from "./component/Education";
 import Achievements from "./component/Achievements";
 import CodingProfiles from "./component/CodingProfiles";
 import Footer from "./component/Footer";
+import Contact from "./component/Contact";
 import "./index.css";
 
 const App = () => {
@@ -38,6 +39,5 @@ const App = () => {
     </>
   );
 };
-
 
 export default App;

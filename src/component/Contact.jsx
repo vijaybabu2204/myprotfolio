@@ -1,14 +1,9 @@
 import React from "react";
-import { personalInfo } from "../data/portfolioData";
 
-const Footer = () => (
-  <>
-    {/* Contact section just before footer */}
+const Contact = () => {
+  return (
     <section className="section contact-section" id="contact">
-      <h2>
-        Got something in mind? <br />
-        Drop it here
-      </h2>
+      <h2>Got something in mind? <br />Drop it here</h2>
 
       <form
         className="contact-form"
@@ -18,6 +13,8 @@ const Footer = () => (
         {/* FormSubmit options */}
         <input type="hidden" name="_subject" value="New portfolio message" />
         <input type="hidden" name="_captcha" value="false" />
+        {/* optional: redirect to thank-you page */}
+        {/* <input type="hidden" name="_next" value="https://your-domain.com/thanks" /> */}
 
         <div className="contact-row">
           <div className="contact-field">
@@ -70,14 +67,7 @@ const Footer = () => (
         </button>
       </form>
     </section>
+  );
+};
 
-    {/* Actual footer */}
-    <footer className="footer">
-      <p>
-        © {new Date().getFullYear()} {personalInfo.name}. All rights reserved.
-      </p>
-    </footer>
-  </>
-);
-
-export default Footer;
+export default Contact;
