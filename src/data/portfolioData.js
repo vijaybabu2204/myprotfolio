@@ -4,11 +4,10 @@ export const personalInfo = {
   phone: "+91 9704830533",
   location: "Surampalem, Andhra Pradesh, India",
   links: {
-    leetCode: "https://leetcode.com/vijay2344",
-    hackerRank: "https://www.hackerrank.com/vijaybabau026",
-    codeChef: "https://www.codechef.com/users/vijay2344",
-    linkedIn: "https://www.linkedin.com/in/vijay-babu-kada-603b62290"
-  }
+  linkedIn: "https://www.linkedin.com/in/vijay-babu-kada-603b62290",
+  github: "https://github.com/vijaybabu2204",
+  instagram: "https://instagram.com/mr_vijay_.22",
+}
 };
 
 export const summary = `

@@ -14,7 +14,7 @@ const CodingProfiles = () => {
 
       <div className="coding-buttons">
         <a
-          href="https://leetcode.com/your-id"
+          href="https://leetcode.com/vijay2344"
           target="_blank"
           rel="noreferrer"
           className="coding-btn"
@@ -23,7 +23,7 @@ const CodingProfiles = () => {
         </a>
 
         <a
-          href="https://www.codechef.com/users/your-id"
+          href="https://www.codechef.com/users/vijay2344"
           target="_blank"
           rel="noreferrer"
           className="coding-btn"
@@ -32,7 +32,7 @@ const CodingProfiles = () => {
         </a>
 
         <a
-          href="https://www.hackerrank.com/your-id"
+          href="https://www.hackerrank.com/vijaybabau026"
           target="_blank"
           rel="noreferrer"
           className="coding-btn"

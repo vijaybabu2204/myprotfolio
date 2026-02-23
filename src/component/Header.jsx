@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { personalInfo } from "../data/portfolioData";
 import vijayPhoto from "../assets/vijayy.png";
+import { FaLinkedin, FaGithub, FaInstagram, FaDownload } from "react-icons/fa";
 import "../index.css";
 
 const Header = () => {
-  const { linkedIn } = personalInfo.links;
+  const { linkedIn, github, instagram } = personalInfo.links;
 
   const fullText =
     "I build dashboards, automation workflows, and data-driven solutions using Power BI, PowerApps, and SQL.";
@@ -13,15 +14,13 @@ const Header = () => {
 
   useEffect(() => {
     let index = 0;
-    const speed = 40; // typing speed in ms
+    const speed = 40;
 
     const interval = setInterval(() => {
       index += 1;
       setTypedText(fullText.slice(0, index));
 
-      if (index === fullText.length) {
-        clearInterval(interval);
-      }
+      if (index === fullText.length) clearInterval(interval);
     }, speed);
 
     return () => clearInterval(interval);
@@ -39,9 +38,22 @@ const Header = () => {
             <span className="typing-cursor">|</span>
           </p>
 
-          <a href={linkedIn} target="_blank" rel="noreferrer">
-            LinkedIn
-          </a>
+          {/* SOCIAL ICONS + RESUME */}
+          <div className="hero-socials">
+            <a href={linkedIn} target="_blank" rel="noreferrer">
+              <FaLinkedin />
+            </a>
+
+            <a href={github} target="_blank" rel="noreferrer">
+              <FaGithub />
+            </a>
+
+            <a href={instagram} target="_blank" rel="noreferrer">
+              <FaInstagram />
+            </a>
+
+           <a href="/Vijay_Babu_Resume.pdf" download className="resume-btn">Resume</a>
+          </div>
         </div>
 
         <div className="hero-image hero-animate-right">

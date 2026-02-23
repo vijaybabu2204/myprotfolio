@@ -1,29 +1,32 @@
 import React from "react";
-import { skills } from "../data/portfolioData";
 
-const Skills = () => (
-  <section className="section">
-    <h2>Skills</h2>
-    <div className="skills-grid">
-      <SkillGroup title="Programming" items={skills.programming} />
-      <SkillGroup title="Web Technologies" items={skills.webTechnologies} />
-      <SkillGroup title="Databases" items={skills.databases} />
-      <SkillGroup title="Data Analytics Tools" items={skills.analyticsTools} />
-      <SkillGroup title="Platforms & Tools" items={skills.platformsTools} />
-      <SkillGroup title="Problem Solving" items={skills.problemSolving} />
-    </div>
-  </section>
-);
+const skills = [
+  { logo: `${import.meta.env.BASE_URL}logos/powerapps.png`, color: "#d946ef" },
+  { logo: `${import.meta.env.BASE_URL}logos/powerbi.png`, color: "#facc15" },
+  { logo: `${import.meta.env.BASE_URL}logos/powerautomate.png`, color: "#60a5fa" },
+  { logo: `${import.meta.env.BASE_URL}logos/sharepoint.png`, color: "#2dd4bf" },
+  { logo: `${import.meta.env.BASE_URL}logos/python.png`, color: "#38bdf8" },
+  { logo: `${import.meta.env.BASE_URL}logos/c.png`, color: "#94a3b8" },
+  { logo: `${import.meta.env.BASE_URL}logos/sql.png`, color: "#22c55e" },
+  { logo: `${import.meta.env.BASE_URL}logos/snowflake.png`, color: "#0ea5e9" },
+];
 
-const SkillGroup = ({ title, items }) => (
-  <div className="skill-group">
-    <h3>{title}</h3>
-    <ul>
-      {items.map((item) => (
-        <li key={item}>{item}</li>
-      ))}
-    </ul>
-  </div>
-);
+export default function Skills() {
+  return (
+    <section className="skills-section">
+      <h2 className="skills-title">Technical Stack</h2>
 
-export default Skills;
+      <div className="skills-grid">
+        {skills.map((skill, index) => (
+          <div
+            className="skill-card"
+            key={index}
+            style={{ "--glow-color": skill.color }}
+          >
+            <img src={skill.logo} alt="" className="skill-logo" />
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
