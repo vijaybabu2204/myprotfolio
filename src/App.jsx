@@ -8,16 +8,13 @@ import Achievements from "./component/Achievements";
 import CodingProfiles from "./component/CodingProfiles";
 import Footer from "./component/Footer";
 import Contact from "./component/Contact";
+import DataBackground from "./component/DataBackground";
 import "./index.css";
 
 const App = () => {
   return (
     <>
-      <div className="bg-animations">
-        <div className="bg-dot d1"></div>
-        <div className="bg-dot d2"></div>
-        <div className="bg-dot d3"></div>
-      </div>
+      <DataBackground />
 
       <div className="app">
         <Header />
