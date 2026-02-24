@@ -1,4 +1,4 @@
-import React from "react";
+import { personalInfo } from "../data/portfolioData";
 
 const Contact = () => {
   return (
@@ -7,7 +7,7 @@ const Contact = () => {
 
       <form
         className="contact-form"
-        action="https://formsubmit.co/vijaybabukada22@gmail.com"
+        action={`https://formsubmit.co/${personalInfo.email}`}
         method="POST"
       >
         {/* FormSubmit options */}

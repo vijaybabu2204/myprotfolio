@@ -4,24 +4,39 @@ export const personalInfo = {
   phone: "+91 9704830533",
   location: "Surampalem, Andhra Pradesh, India",
   links: {
-  linkedIn: "https://www.linkedin.com/in/vijay-babu-kada-603b62290",
-  github: "https://github.com/vijaybabu2204",
-  instagram: "https://instagram.com/mr_vijay_.22",
-}
+    linkedIn: "https://www.linkedin.com/in/vijay-babu-kada-603b62290",
+    github: "https://github.com/vijaybabu2204",
+    instagram: "https://instagram.com/mr_vijay_.22",
+    leetcode: "https://leetcode.com/vijay2344",
+    codechef: "https://www.codechef.com/users/vijay2344",
+    hackerrank: "https://www.hackerrank.com/vijaybabau026",
+  }
 };
+
+export const typingText = "I build dashboards, automation workflows, and data-driven solutions using Power BI, PowerApps, and SQL.";
 
 export const summary = `
 Passionate B.Tech student specializing in Artificial Intelligence & Machine Learning with strong interests in Data Analytics and problem solving. Skilled in Python, SQL, and Power BI for extracting insights and building dashboards. Experienced in data analysis, optimization techniques, and developing automation solutions. Eager to contribute to real-world projects and grow as a data-driven professional.
 `;
 
-export const skills = {
-  programming: ["Python", "Java", "C"],
-  webTechnologies: ["HTML", "CSS"],
-  databases: ["SQL", "MySQL", "Data Modeling"],
-  analyticsTools: ["Power BI", "MS Excel", "Jupyter Notebook"],
-  platformsTools: ["Git", "SharePoint", "Power Automate", "PowerApps"],
-  problemSolving: ["LeetCode", "CodeChef", "HackerRank"]
-};
+export const skills = [
+  { name: "PowerApps", logo: "logos/powerapps.png", color: "#d946ef" },
+  { name: "Power BI", logo: "logos/powerbi.png", color: "#facc15" },
+  { name: "Power Automate", logo: "logos/powerautomate.png", color: "#60a5fa" },
+  { name: "SharePoint", logo: "logos/sharepoint.png", color: "#2dd4bf" },
+  { name: "Python", logo: "logos/python.png", color: "#38bdf8" },
+  { name: "Java", logo: "logos/java.png", color: "#ef4444" },
+  { name: "C", logo: "logos/c.png", color: "#94a3b8" },
+  { name: "SQL", logo: "logos/sql.png", color: "#22c55e" },
+  { name: "Snowflake", logo: "logos/snowflake.png", color: "#0ea5e9" },
+  { name: "Excel", logo: "logos/excel.png", color: "#04481d" },
+];
+
+export const dataAnalyticsPoints = [
+  "Proficient in data analysis using SQL, Power BI, and Excel to turn raw data into actionable insights.",
+  "Skilled in building interactive dashboards, reports, and KPIs for business decision-making.",
+  "Experienced in cleaning, transforming, and modeling data to support automation and performance optimization.",
+];
 
 export const projects = [
   {

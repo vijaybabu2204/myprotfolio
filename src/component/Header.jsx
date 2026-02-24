@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { personalInfo } from "../data/portfolioData";
+import { personalInfo, typingText } from "../data/portfolioData";
 import vijayPhoto from "../assets/vijayy.png";
-import { FaLinkedin, FaGithub, FaInstagram, FaDownload } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import "../index.css";
 
 const Header = () => {
   const { linkedIn, github, instagram } = personalInfo.links;
 
-  const fullText =
-    "I build dashboards, automation workflows, and data-driven solutions using Power BI, PowerApps, and SQL.";
+  const fullText = typingText;
 
   const [typedText, setTypedText] = useState("");
 
@@ -24,7 +23,7 @@ const Header = () => {
     }, speed);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [fullText]);
 
   return (
     <header className="hero">
@@ -52,7 +51,13 @@ const Header = () => {
               <FaInstagram />
             </a>
 
-           <a href="/Vijay_Babu_Resume.pdf" download className="resume-btn">Resume</a>
+            <a
+              href="/myprotfolio/Vijay_Babu_Resume.pdf"
+              download
+              className="resume-btn"
+            >
+              Resume
+            </a>
           </div>
         </div>
 

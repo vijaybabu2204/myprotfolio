@@ -17,11 +17,6 @@ const App = () => {
         <div className="bg-dot d1"></div>
         <div className="bg-dot d2"></div>
         <div className="bg-dot d3"></div>
-        <div className="bg-dot d4"></div>
-        <div className="bg-dot d5"></div>
-        <div className="bg-dot d6"></div>
-        <div className="bg-dot d7"></div>
-        <div className="bg-dot d8"></div>
       </div>
 
       <div className="app">
@@ -33,6 +28,7 @@ const App = () => {
           <Education />
           <Achievements />
           <CodingProfiles />
+          <Contact />
         </main>
         <Footer />
       </div>

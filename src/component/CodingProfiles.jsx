@@ -1,20 +1,25 @@
-import React from "react";
-import "../index.css";
+import { personalInfo } from "../data/portfolioData";
 
 const CodingProfiles = () => {
+  const { leetcode, codechef, hackerrank } = personalInfo.links;
+
   return (
-    <section className="section coding-section">
-      <div className="coding-text">
-        <h2>Coding Profiles</h2>
+    <section className="coding-section">
+      {/* HEADER */}
+      <h2 className="coding-title">Coding Profiles</h2>
+
+      {/* DESCRIPTION CARD */}
+      <div className="coding-desc-card">
         <p>
           Explore my coding profiles where I practice problem solving and
           participate in contests.
         </p>
       </div>
 
+      {/* PROFILE BUTTONS */}
       <div className="coding-buttons">
         <a
-          href="https://leetcode.com/vijay2344"
+          href={leetcode}
           target="_blank"
           rel="noreferrer"
           className="coding-btn"
@@ -23,7 +28,7 @@ const CodingProfiles = () => {
         </a>
 
         <a
-          href="https://www.codechef.com/users/vijay2344"
+          href={codechef}
           target="_blank"
           rel="noreferrer"
           className="coding-btn"
@@ -32,7 +37,7 @@ const CodingProfiles = () => {
         </a>
 
         <a
-          href="https://www.hackerrank.com/vijaybabau026"
+          href={hackerrank}
           target="_blank"
           rel="noreferrer"
           className="coding-btn"
