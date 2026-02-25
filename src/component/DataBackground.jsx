@@ -23,7 +23,7 @@ const DataBackground = () => {
                 this.y = Math.random() * canvas.height;
                 this.vx = (Math.random() - 0.5) * 0.5;
                 this.vy = (Math.random() - 0.5) * 0.5;
-                this.size = Math.random() * 2 + 1;
+                this.radius = Math.random() * 2 + 1;
             }
 
             update() {
@@ -36,8 +36,8 @@ const DataBackground = () => {
 
             draw() {
                 ctx.beginPath();
-                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                ctx.fillStyle = 'rgba(6, 182, 212, 0.5)'; // cyber cyan
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                ctx.fillStyle = 'rgba(6, 182, 212, 0.5)'; // Cyan
                 ctx.fill();
             }
         }
@@ -49,7 +49,7 @@ const DataBackground = () => {
             }
         };
 
-        const drawConnections = () => {
+        const drawLines = () => {
             for (let i = 0; i < particles.length; i++) {
                 for (let j = i + 1; j < particles.length; j++) {
                     const dx = particles[i].x - particles[j].x;
@@ -58,10 +58,10 @@ const DataBackground = () => {
 
                     if (distance < connectionDistance) {
                         ctx.beginPath();
-                        ctx.moveTo(particles[i].x, particles[i].y);
-                        ctx.lineTo(particles[j].x, particles[j].y);
                         ctx.strokeStyle = `rgba(6, 182, 212, ${1 - distance / connectionDistance})`;
                         ctx.lineWidth = 0.5;
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
                         ctx.stroke();
                     }
                 }
@@ -71,7 +71,7 @@ const DataBackground = () => {
         const animate = () => {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-            // Draw static grid lines for data feel
+            // Draw a subtle grid
             ctx.strokeStyle = 'rgba(6, 182, 212, 0.05)';
             ctx.lineWidth = 1;
             const step = 50;
@@ -92,7 +92,7 @@ const DataBackground = () => {
                 p.update();
                 p.draw();
             });
-            drawConnections();
+            drawLines();
             animationFrameId = requestAnimationFrame(animate);
         };
 
@@ -116,7 +116,7 @@ const DataBackground = () => {
                 left: 0,
                 zIndex: -1,
                 pointerEvents: 'none',
-                background: '#020617',
+                background: '#020617', // Deep Navy
             }}
         />
     );

@@ -26,7 +26,7 @@ const Header = () => {
   }, [fullText]);
 
   return (
-    <header className="hero">
+    <header className="hero" id="home">
       <div className="hero-inner">
         <div className="hero-text hero-animate-left">
           <h1>Hello, I'm Vijay</h1>

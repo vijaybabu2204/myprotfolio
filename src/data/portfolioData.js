@@ -25,7 +25,6 @@ export const skills = [
   { name: "Power Automate", logo: "logos/powerautomate.png", color: "#60a5fa" },
   { name: "SharePoint", logo: "logos/sharepoint.png", color: "#2dd4bf" },
   { name: "Python", logo: "logos/python.png", color: "#38bdf8" },
-  { name: "Java", logo: "logos/java.png", color: "#ef4444" },
   { name: "C", logo: "logos/c.png", color: "#94a3b8" },
   { name: "SQL", logo: "logos/sql.png", color: "#22c55e" },
   { name: "Snowflake", logo: "logos/snowflake.png", color: "#0ea5e9" },
@@ -77,13 +76,48 @@ export const education = [
 ];
 
 export const achievements = [
-  "Java Foundations — Oracle",
-  "C Programming — Cisco",
-  "Python Programming — Cisco",
-  "Google Cloud Computing Foundations — NPTEL",
-  "HTML & CSS — Certiport",
-  "Data Specialist Internship — Technical Hub Pvt. Ltd.",
-  "Snowflake SnowPro Associate (Platform Training)"
+  {
+    title: "Java Foundations — Oracle",
+    certificate: "certificates/Java.pdf",
+    icon: "FaJava",
+    code: "OR-JF-2024"
+  },
+  {
+    title: "C Programming — Cisco",
+    certificate: "certificates/c certificate.pdf",
+    icon: "FaTerminal",
+    code: "CS-CP-2024"
+  },
+  {
+    title: "Python Programming — Cisco",
+    certificate: "certificates/python certificate.pdf",
+    icon: "FaPython",
+    code: "CS-PY-2024"
+  },
+  {
+    title: "Google Cloud Computing Foundations — NPTEL",
+    certificate: "",
+    icon: "FaCloud",
+    code: "GC-CF-2024"
+  },
+  {
+    title: "HTML & CSS — Certiport",
+    certificate: "certificates/html css.pdf",
+    icon: "FaCode",
+    code: "CP-HC-2024"
+  },
+  {
+    title: "Data Specialist Internship — Technical Hub Pvt. Ltd.",
+    certificate: "certificates/internship.pdf",
+    icon: "FaDatabase",
+    code: "TH-DS-2024"
+  },
+  {
+    title: "Snowflake SnowPro Associate (Platform Training)",
+    certificate: "certificates/snowflake certificate.pdf",
+    icon: "FaSnowflake",
+    code: "SF-SP-2024"
+  }
 ];
 
 export const codingCompetency = [

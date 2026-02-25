@@ -9,13 +9,14 @@ import CodingProfiles from "./component/CodingProfiles";
 import Footer from "./component/Footer";
 import Contact from "./component/Contact";
 import DataBackground from "./component/DataBackground";
+import Navbar from "./component/Navbar";
 import "./index.css";
 
 const App = () => {
   return (
     <>
       <DataBackground />
-
+      <Navbar />
       <div className="app">
         <Header />
         <main>
