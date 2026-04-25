@@ -52,8 +52,8 @@ const Header = () => {
             </a>
 
             <a
-              href="/myprotfolio/Vijay_Babu_Resume.pdf"
-              download
+              href={`/myprotfolio/Vijay_Babu_Resume.pdf?v=${Date.now()}`}
+              download="Vijay_Babu_Resume.pdf"
               className="resume-btn"
             >
               Resume
