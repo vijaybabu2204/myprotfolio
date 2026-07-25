@@ -610,3 +610,127 @@ h3 {
     transform: translateY(0);
   }
 }
+
+/* Experience Section */
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.experience-card {
+  background: var(--glass);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.experience-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.experience-card:hover {
+  background: rgba(15, 23, 42, 0.8);
+  border-color: var(--accent);
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px var(--accent-soft);
+}
+
+.experience-card:hover::before {
+  opacity: 1;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.experience-title-area {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.experience-icon-box {
+  width: 48px;
+  height: 48px;
+  background: var(--accent-soft);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: var(--accent);
+  border: 1px solid var(--glass-border);
+}
+
+.experience-role {
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.experience-company {
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.experience-duration {
+  font-size: 0.85rem;
+  background: var(--accent-soft);
+  color: var(--accent);
+  padding: 0.4rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  border: 1px solid var(--accent-soft);
+}
+
+.experience-details {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.experience-detail-item {
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--text-secondary);
+}
+
+.experience-detail-item::before {
+  content: '0x';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 0.7rem;
+  top: 0.2rem;
+  font-weight: bold;
+}
+
+.experience-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid var(--glass-border);
+}

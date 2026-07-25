@@ -3,6 +3,7 @@ import Header from "./component/Header";
 import Summary from "./component/Summary";
 import Skills from "./component/Skills";
 import Projects from "./component/Projects";
+import Experience from "./component/Experience";
 import Education from "./component/Education";
 import Achievements from "./component/Achievements";
 import CodingProfiles from "./component/CodingProfiles";
@@ -22,6 +23,7 @@ const App = () => {
         <main>
           <Summary />
           <Skills />
+          <Experience />
           <Projects />
           <Education />
           <Achievements />

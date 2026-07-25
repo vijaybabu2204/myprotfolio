@@ -62,6 +62,20 @@ export const projects = [
   }
 ];
 
+export const experiences = [
+  {
+    role: "Data Specialist Intern",
+    company: "Technical Hub Pvt. Ltd.",
+    duration: "2024",
+    certificate: "certificates/internship.pdf",
+    points: [
+      "Worked on cleaning, transforming, and modeling complex datasets for analysis.",
+      "Built structured databases and wrote optimized SQL queries to retrieve data efficiently.",
+      "Developed visualization dashboards to communicate insights effectively to team leads."
+    ]
+  }
+];
+
 export const education = [
   {
     degree: "B.Tech in Artificial Intelligence and Machine Learning",
@@ -108,12 +122,7 @@ export const achievements = [
     icon: "FaCode",
     code: "CP-HC-2024"
   },
-  {
-    title: "Data Specialist Internship — Technical Hub Pvt. Ltd.",
-    certificate: "certificates/internship.pdf",
-    icon: "FaDatabase",
-    code: "TH-DS-2024"
-  },
+
   {
     title: "Snowflake SnowPro Associate (Platform Training)",
     certificate: "certificates/snowflake certificate.pdf",
