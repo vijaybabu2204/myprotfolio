@@ -9,9 +9,9 @@ const Summary = () => {
         <p>{summary}</p>
       </div>
 
-      {/* RIGHT: Data Analytics card (higher) */}
+      {/* RIGHT: Data Analytics & AIML card (higher) */}
       <div className="summary-right da-block">
-        <h3>Data Analytics</h3>
+        <h3>Data Analytics &amp; AIML</h3>
         <ul>
           {dataAnalyticsPoints.map((point, index) => (
             <li key={index}>{point}</li>

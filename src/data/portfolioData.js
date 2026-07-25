@@ -13,7 +13,7 @@ export const personalInfo = {
   }
 };
 
-export const typingText = "I build dashboards, automation workflows, and data-driven solutions using Power BI, PowerApps, and SQL.";
+export const typingText = "I build predictive models, interactive dashboards, and automated solutions using Machine Learning, Power BI, and SQL.";
 
 export const summary = `
 Passionate B.Tech student specializing in Artificial Intelligence & Machine Learning with strong interests in Data Analytics and problem solving. Skilled in Python, SQL, and Power BI for extracting insights and building dashboards. Experienced in data analysis, optimization techniques, and developing automation solutions. Eager to contribute to real-world projects and grow as a data-driven professional.
@@ -35,6 +35,8 @@ export const dataAnalyticsPoints = [
   "Proficient in data analysis using SQL, Power BI, and Excel to turn raw data into actionable insights.",
   "Skilled in building interactive dashboards, reports, and KPIs for business decision-making.",
   "Experienced in cleaning, transforming, and modeling data to support automation and performance optimization.",
+  "Experienced in building and training Machine Learning models using Python libraries such as Scikit-Learn, Pandas, and NumPy.",
+  "Skilled in implementing supervised and unsupervised learning algorithms to uncover patterns and predict trends."
 ];
 
 export const projects = [
@@ -117,6 +119,18 @@ export const achievements = [
     certificate: "certificates/snowflake certificate.pdf",
     icon: "FaSnowflake",
     code: "SF-SP-2024"
+  },
+  {
+    title: "Power Platform Developer (PL-400) — Microsoft",
+    certificate: "certificates/PL-400.pdf",
+    icon: "FaMicrosoft",
+    code: "MS-PL-400"
+  },
+  {
+    title: "Power Platform Solution Architect (PL-600) — Microsoft",
+    certificate: "certificates/PL-600.pdf",
+    icon: "FaMicrosoft",
+    code: "MS-PL-600"
   }
 ];
 

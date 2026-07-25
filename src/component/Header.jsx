@@ -30,7 +30,7 @@ const Header = () => {
       <div className="hero-inner">
         <div className="hero-text hero-animate-left">
           <h1>Hello, I'm Vijay</h1>
-          <h2>Data Analytics &amp; PowerApps Developer</h2>
+          <h2>Data Analytics &amp; AIML Developer</h2>
 
           <p className="typing-line">
             {typedText}
@@ -52,8 +52,8 @@ const Header = () => {
             </a>
 
             <a
-              href={`/myprotfolio/Vijay_Babu_Resume.pdf?v=${Date.now()}`}
-              download="Vijay_Babu_Resume.pdf"
+              href={`/myprotfolio/Kada_Vijay_babu.pdf?v=${Date.now()}`}
+              download="Kada_Vijay_babu.pdf"
               className="resume-btn"
             >
               Resume

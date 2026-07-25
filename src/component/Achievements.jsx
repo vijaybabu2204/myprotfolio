@@ -8,7 +8,8 @@ import {
   FaCode,
   FaDatabase,
   FaSnowflake,
-  FaExternalLinkAlt
+  FaExternalLinkAlt,
+  FaMicrosoft
 } from "react-icons/fa";
 
 const iconMap = {
@@ -18,7 +19,8 @@ const iconMap = {
   FaCloud: <FaCloud style={{ color: "#4285f4" }} />,
   FaCode: <FaCode style={{ color: "#e34f26" }} />,
   FaDatabase: <FaDatabase style={{ color: "#336791" }} />,
-  FaSnowflake: <FaSnowflake style={{ color: "#29b5e8" }} />
+  FaSnowflake: <FaSnowflake style={{ color: "#29b5e8" }} />,
+  FaMicrosoft: <FaMicrosoft style={{ color: "#0078d4" }} />
 };
 
 const Achievements = () => (
